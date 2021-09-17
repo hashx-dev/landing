@@ -36,12 +36,11 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            A Creative way to grow your Exciting Business model
+            The Future of Retail is here 
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Leverage the latest technologies to scale your business to new heights. Lower costs while increasing reach, engagement and profit! 
+            
           </Text>
           <Subscribe />
           <Flex sx={styles.sponsorBox}>

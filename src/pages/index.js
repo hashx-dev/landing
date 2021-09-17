@@ -16,8 +16,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
-          title="Startup Agency Creative Landing"
+          description="Omnichannel Retail Discovery Platform simplifying Digital Marketing, Consumer Engagement and Social Commerce through Robotics, IOT and Web 2.0."
+          title="Hashx, the Future of Retail"
         />
         <Banner />
         <Feature />

@@ -6,10 +6,10 @@ import Image from 'components/image';
 import KnowledgeThumb from 'assets/images/knowledge-thumb.png';
 
 const data = {
-  title: 'we are committed to using fact-based knowledge to our customers',
+  title: 'Update your Retail Business to Adapt and Sustain in a post-Covid World',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
-  btnName: 'Explore Details',
+    'Identify and maximize interactions with stakeholders. Collect learnings and iterate to execute effective solutions',
+  btnName: 'Join the Revolution',
   btnURL: '#',
 };
 

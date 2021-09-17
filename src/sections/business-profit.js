@@ -9,19 +9,23 @@ import DrawingArrow from 'assets/drawing-arrow.svg';
 
 const data = {
   title:
-    'We help you to boost your business profitable with our talent marketer',
+    'We help you create network effects to boost your business like never before',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Explore Details',
+    'Increase your pool of stakeholders through social commerce as a sureshot way of maximizing the momentum and reach of your brand.',
+  btnName: 'Learn More',
   btnURL: '#',
   points: [
     {
       icon: <IoIosCheckmarkCircle />,
-      text: 'Unlimited design possibility',
+      text: 'Organic leads to your ideal customer',
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      text: 'Completely responsive features',
+      text: 'Omnichannel within your budget',
+    },
+    {
+      icon: <IoIosCheckmarkCircle />,
+      text: 'Scalable growth at your fingertips',
     },
   ],
 };
