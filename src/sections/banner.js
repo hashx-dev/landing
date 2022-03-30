@@ -3,32 +3,10 @@ import { jsx } from 'theme-ui';
 import { Container, Flex, Box, Heading, Text, Image } from 'theme-ui';
 import { Link } from 'components/link';
 import Subscribe from 'components/subscribe';
-import BannerThumb from 'assets/images/banner-thumb.png';
+import BannerThumb from 'assets/images/discover.jpg';
 
-import client1 from 'assets/sponsor/paypal.svg';
-import client2 from 'assets/sponsor/google.svg';
-import client3 from 'assets/sponsor/dropbox.svg';
 
-const data = [
-  {
-    id: 1,
-    path: '#',
-    image: client1,
-    title: 'paypal',
-  },
-  {
-    id: 2,
-    path: '#',
-    image: client2,
-    title: 'google',
-  },
-  {
-    id: 3,
-    path: '#',
-    image: client3,
-    title: 'dropbox',
-  },
-];
+
 
 export default function Banner() {
   return (
@@ -43,16 +21,6 @@ export default function Banner() {
             
           </Text>
           <Subscribe />
-          <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
-                </Link>
-              ))}
-            </Box>
-          </Flex>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
