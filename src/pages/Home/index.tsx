@@ -16,40 +16,86 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      <MiddleBlock
+        title={AboutContent.title}
+        content={AboutContent.text}
+        button={AboutContent.button.title}
+      />
+      <MiddleBlock
+        title={MiddleBlockContent.title}
+        content={null}
+        button={null}
+      />
       <ContentBlock
         type="right"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="business.svg"       
         id="intro"
-      />
-      <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
       />
       <ContentBlock
         type="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="graphs.svg"
-        id="about"
+        title={IntroContent.title}
+        content={IntroContent.text}
+        button={IntroContent.button}
+        icon="delivery.svg"
+        id="intro"
       />
       <ContentBlock
         type="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
+        title={IntroContent.title}
+        content={IntroContent.text}
+        button={IntroContent.button}
+        icon="comunication.svg"
+        id="intro"
+      />
+      <ContentBlock
+        type="left"
+        title={IntroContent.title}
+        content={IntroContent.text}
+        button={IntroContent.button}
+        icon="comunity.svg"
+        id="intro"
+      />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+      <h6> App Screens</h6>
+      </div>
+      
+      <ContentBlock
+        type="left"
+        title={ProductContent.title}
+        content={ProductContent.text}
+        icon="feed.svg"
+        id="intro"
+      />
+      <ContentBlock
+        type="right"
+        title={ProductContent.title}
+        content={ProductContent.text}
+        icon="trade.svg"
+        id="intro"
       />
       <ContentBlock
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
+        icon="sign.svg"
+        id="intro"
+      />
+      <ContentBlock
+        type="left"
+        title={ProductContent.title}
+        content={ProductContent.text}
+        icon="network.svg"
+        id="intro"
       />
       <Contact
         title={ContactContent.title}
