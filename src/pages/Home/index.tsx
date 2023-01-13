@@ -3,7 +3,10 @@ import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+import ProductContent1 from "../../content/ProductContent1.json";
+import ProductContent2 from "../../content/ProductContent2.json";
+import ProductContent3 from "../../content/ProductContent3.json";
+import ProductContent4 from "../../content/ProductContent4.json";
 import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -71,29 +74,29 @@ const Home = () => {
       
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent1.title}
+        content={ProductContent1.text}
         icon="feed.svg"
         id="intro"
       />
       <ContentBlock
         type="right"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent2.title}
+        content={ProductContent2.text}
         icon="trade.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent3.title}
+        content={ProductContent3.text}
         icon="sign.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent4.title}
+        content={ProductContent4.text}
         icon="network.svg"
         id="intro"
       />
