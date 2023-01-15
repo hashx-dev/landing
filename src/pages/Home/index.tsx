@@ -1,5 +1,9 @@
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
+import IntroContent1 from "../../content/IntroContent1.json";
+import IntroContent2 from "../../content/IntroContent2.json";
+import IntroContent3 from "../../content/IntroContent3.json";
+import IntroContent4 from "../../content/IntroContent4.json";
+
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
@@ -31,33 +35,33 @@ const Home = () => {
       />
       <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent1.title}
+        content={IntroContent1.text}
+        button={IntroContent1.button}
         icon="business.svg"       
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent2.title}
+        content={IntroContent2.text}
+        button={IntroContent2.button}
         icon="delivery.svg"
         id="intro"
       />
       <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent3.title}
+        content={IntroContent3.text}
+        button={IntroContent3.button}
         icon="comunication.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent4.title}
+        content={IntroContent4.text}
+        button={IntroContent4.button}
         icon="comunity.svg"
         id="intro"
       />
