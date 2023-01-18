@@ -24,10 +24,10 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{t(title)}</h6>
+              <h6 style={{color:"orange"}}>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button color="orange" name="submit" onClick={() => scrollTo("mission")}>
                   {t(button)}
                 </Button>
               )}
