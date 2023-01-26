@@ -6,6 +6,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 
+import {Card , Stack} from "@mui/material"
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -16,6 +17,31 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      <Stack direction="row">
+      <Card  sx={{ maxWidth: 500}} >
+      <video width={"500"} 
+      autoPlay
+      controls 
+      muted 
+      poster="https://ruttl.com/assets/img/index-hero.jpg">
+  <source
+    src="https://ruttl.com/assets/video/index-hero.webm"
+    type="video/mp4"
+  />
+</video></Card>
+<Stack ml={5} p={3}>
+<div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+      <h6>Introduction Video</h6>
+      </div>
+</Stack>
+</Stack>
       <MiddleBlock
         title={AboutContent.title}
         content={AboutContent.text}
