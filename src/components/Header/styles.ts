@@ -92,7 +92,7 @@ export const Outline = styled(MenuOutlined)<any>`
 
 export const Span = styled("span")`
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
 
   &:hover,
   &:active,

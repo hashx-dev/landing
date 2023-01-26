@@ -74,7 +74,7 @@ export const Chat = styled("p")`
   border-bottom: 1px solid #18216d;
   cursor: pointer;
   margin-top: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
 
   &:hover {
     border-bottom: 1px solid rgb(255, 130, 92);
