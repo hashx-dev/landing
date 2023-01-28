@@ -14,9 +14,15 @@ bannerPhoto: /img/pancakes.jpeg
 canonicalUrl: https://colinhacks.com/essays/devii
 ---
 
+
 > Originally published at [https://colinhacks.com/essays/devii](https://colinhacks.com/essays/devii). Check out the HN <del>roast</del> discussion <a href="https://news.ycombinator.com/item?id=23309002">here</a>! 🤗
 
 I recently set out to build my personal website — the one you're reading now, as it happens!
+<p align="center">
+[![ABC](https://i.ibb.co/9Y1yCDD/My-project.png)](https://youtu.be/Cg5J6Eo_3H0 "ABC")
+</p>
+
+
 
 Surprisingly, it was much harder than expected to put together a "tech stack" that met my criteria. My criteria are pretty straightforward; I would expect most React devs to have a similar list. Yet it was surprisingly hard to put all these pieces together.
 
