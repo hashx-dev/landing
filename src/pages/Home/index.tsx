@@ -1,9 +1,17 @@
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
+import IntroContent1 from "../../content/IntroContent1.json";
+import IntroContent2 from "../../content/IntroContent2.json";
+import IntroContent3 from "../../content/IntroContent3.json";
+import IntroContent4 from "../../content/IntroContent4.json";
+
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
-// import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+
+//import MissionContent from "../../content/MissionContent.json";
+import ProductContent1 from "../../content/ProductContent1.json";
+import ProductContent2 from "../../content/ProductContent2.json";
+import ProductContent3 from "../../content/ProductContent3.json";
+import ProductContent4 from "../../content/ProductContent4.json";
 import ContactContent from "../../content/ContactContent.json";
 
 import {Card , Stack} from "@mui/material"
@@ -54,33 +62,33 @@ const Home = () => {
       />
       <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent1.title}
+        content={IntroContent1.text}
+        button={IntroContent1.button}
         icon="business.svg"       
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent2.title}
+        content={IntroContent2.text}
+        button={IntroContent2.button}
         icon="delivery.svg"
         id="intro"
       />
       <ContentBlock
         type="right"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent3.title}
+        content={IntroContent3.text}
+        button={IntroContent3.button}
         icon="comunication.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
+        title={IntroContent4.title}
+        content={IntroContent4.text}
+        button={IntroContent4.button}
         icon="comunity.svg"
         id="intro"
       />
@@ -97,29 +105,29 @@ const Home = () => {
       
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent1.title}
+        content={ProductContent1.text}
         icon="feed.svg"
         id="intro"
       />
       <ContentBlock
         type="right"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent2.title}
+        content={ProductContent2.text}
         icon="trade.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent3.title}
+        content={ProductContent3.text}
         icon="sign.svg"
         id="intro"
       />
       <ContentBlock
         type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={ProductContent4.title}
+        content={ProductContent4.text}
         icon="network.svg"
         id="intro"
       />
