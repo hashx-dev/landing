@@ -12,6 +12,7 @@ type Props = {
     title : string,
     src: string ,
     content : string
+    filename: string
 }
 export const Post = (props: Props) => {
   return (
@@ -27,10 +28,10 @@ export const Post = (props: Props) => {
         color="white"
         fixedWidth={true}
         onClick={() => {
-            return console.log(props.id)
+            return console.log(props.filename)
         }}
         >
-        <Link to={{pathname: `/blog/${props.id}`}}>
+        <Link to={{pathname: `/blog/${props.filename}`}}>
         Read Blog </Link>
         </Button>
       </ButtonWrapper>
