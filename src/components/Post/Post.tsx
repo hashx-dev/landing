@@ -4,8 +4,10 @@ import { useState , useEffect } from 'react'
 import Markdown from 'markdown-to-jsx'
 import { marked } from 'marked';
 import matter from 'gray-matter';
-import {Buffer} from 'buffer';
-Buffer.from('anything','base64');
+// import fs from 'fs'
+import parseMD from 'parse-md'
+import {Avatar} from "@mui/material"
+
 function parseTextFromMarkDown(mdString :string) {
   const htmlString = marked(mdString);
   const parser = new DOMParser();
@@ -29,12 +31,12 @@ type Props = {
 }
 const Post = (props: Props) => {
   const file_name = props.path;
+
+
   const [post, setPost] = useState("");
   useEffect(() => {
     import(`../../md/blog/${file_name}`)
       .then(res => {
-        let  y = b(post)
-        console.log(y)
         fetch(res.default)
           .then(res => res.text())
           .then(res => setPost(res))
@@ -42,27 +44,41 @@ const Post = (props: Props) => {
       })
       .catch(err => console.log(err));
   });
+ 
+ 
 
- async function b(post : string){
-    let x = matter(post ,{ excerpt: true})
-    console.log("x" , x)
-    return x
-  }
-  
-  // let x  = parseTextFromMarkDown(post)
-  // console.log("post",post.split(":"))
-  // console.log(x)
-  // let l = [];
-  // for(let i = 2 ; i<x.length ; i++ ){
-  //   l.push(x[i])
-  // }
-  // console.log("this is l" ,l)
+    
+const fileContents = post
+let { metadata, content } = parseMD(fileContents) 
+const myJSON = JSON.stringify(metadata);
+let obj = JSON.parse(myJSON)
+// {
+// let {
+//   title,
+//   subtitle,
+//   description,
+//   canonicalUrl,
+//   published,
+//   datePublished,
+//   author,
+//   authorPhoto,
+//   authorTwitter,
+//   tags,
+//   bannerPhoto,
+//   thumbnailPhoto,
+// }  =obj}
+console.log(obj.bannerPhoto)
   return (
     <div>
-      {/* <h1>{props.path}</h1> */}
+      <img src={obj.bannerPhoto} alt="thumbanail" width="auto" height={400} />
+      <h1>{obj.title}</h1>
+      <p>{obj.subtitle}</p>
+      {/* <img src={obj.authorPhoto} alt="profile"/> */}
+      <Avatar alt="author" src={obj.authorPhoto} />
+      <p>{obj.author}</p>
+      
        <Markdown >
-        {}
-        {post}
+        {content}
       </Markdown>
     </div>
   )
