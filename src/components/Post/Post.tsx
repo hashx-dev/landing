@@ -1,30 +1,30 @@
-import React from 'react'
+// import React from 'react'
 // import {Markdown} from "./Markdown"
 import { useState , useEffect } from 'react'
 import Markdown from 'markdown-to-jsx'
-import { marked } from 'marked';
-import matter from 'gray-matter';
+// import { marked } from 'marked';
+// import matter from 'gray-matter';
 // import fs from 'fs'
 import parseMD from 'parse-md'
 import {Avatar} from "@mui/material"
 
-function parseTextFromMarkDown(mdString :string) {
-  const htmlString = marked(mdString);
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(htmlString, 'text/html');
-  const walker = document.createTreeWalker(doc, NodeFilter.SHOW_TEXT);
+// function parseTextFromMarkDown(mdString :string) {
+//   const htmlString = marked(mdString);
+//   const parser = new DOMParser();
+//   const doc = parser.parseFromString(htmlString, 'text/html');
+//   const walker = document.createTreeWalker(doc, NodeFilter.SHOW_TEXT);
 
-  const textList = [];
-  let currentNode = null
-  currentNode = walker.currentNode;
+//   const textList = [];
+//   let currentNode = null
+//   currentNode = walker.currentNode;
 
-  while(currentNode) {
-    textList.push(currentNode.textContent);
-    currentNode = walker.nextNode();
-  }
+//   while(currentNode) {
+//     textList.push(currentNode.textContent);
+//     currentNode = walker.nextNode();
+//   }
 
-  return textList;
-}
+//   return textList;
+// }
 
 type Props = {
   path: string
