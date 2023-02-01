@@ -29,8 +29,13 @@ const useStyles = makeStyles((theme: Theme) =>
     button: {
       position: 'absolute',
       bottom: theme.spacing(2),
-      right: theme.spacing(2),
+      right: theme.spacing(1),
+      left : theme.spacing(5),
+      width : "100%"
     },
+    div :{
+      margin : '20px'
+    }
   })
 );
 export const Post = (props: Props) => {
@@ -42,9 +47,11 @@ export const Post = (props: Props) => {
       <Content>
         {props.content}
     </Content>
-      <ButtonWrapper>
+    <div className={classes.div}>
+      <ButtonWrapper className={classes.button}>
           <ButtonLink to={`/blog/${props.filename}`}  text={"Read More"} className={classes.button}/>
       </ButtonWrapper>
+      </div>
     </Card>
   )
 }

@@ -10,6 +10,9 @@ export const ButtonWrapper = styled("div")`
   justify-content: space-between;
 //   max-width: 100%;
 
+      position: 'absolute',
+      bottom: theme.spacing(2),
+      right: theme.spacing(2),
   @media screen and (min-width: 1024px) {
     max-width: 80%;
   }
