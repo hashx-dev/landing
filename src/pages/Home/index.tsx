@@ -25,9 +25,8 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <Stack direction="row">
-      <Card  sx={{ maxWidth: 500}} >
-      <video width={"500"} 
+      <Card  sx={{ maxWidth: 1100}} >
+      <video width="100%" 
       autoPlay
       controls 
       muted 
@@ -37,19 +36,7 @@ const Home = () => {
     type="video/mp4"
   />
 </video></Card>
-<Stack ml={5} p={3}>
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-      <h6>Introduction Video</h6>
-      </div>
-</Stack>
-</Stack>
+
       <MiddleBlock
         title={AboutContent.title}
         content={AboutContent.text}

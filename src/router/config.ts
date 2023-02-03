@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: ["/blog/:title", "/Blog/:id"],
-    exact: false,
+    exact: true,
     component: "SingleBlog",
   },
 ];
