@@ -14,7 +14,7 @@ import ProductContent3 from "../../content/ProductContent3.json";
 import ProductContent4 from "../../content/ProductContent4.json";
 import ContactContent from "../../content/ContactContent.json";
 
-import {Card , Stack} from "@mui/material"
+import {Card } from "@mui/material"
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
