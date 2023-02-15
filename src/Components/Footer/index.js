@@ -1,14 +1,15 @@
+import React from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
-import { Stack, Typography, TextField, Container } from "@mui/material";
+// import { Stack, Typography, TextField, Container } from "@mui/material";
 import { FooterSection, Title, Extra, Large } from "./styles";
 
 const Footer = ({ t }) => {
 	return (
 		<>
 			<FooterSection>
-				<Container>
+				<div>
 					<Row justify="space-between">
 						<Col lg={4} md={2} sm={12} xs={12}>
 							<SvgIcon
@@ -57,7 +58,7 @@ const Footer = ({ t }) => {
 							<Large left="true" to="/">
 								{t("Enter your email address for joined our agency")}
 							</Large>
-							<TextField
+							<input
 								fullWidth
 								error
 								color="warning"
@@ -66,19 +67,19 @@ const Footer = ({ t }) => {
 							/>
 						</Col>
 					</Row>
-				</Container>
+				</div>
 			</FooterSection>
 			<Extra>
-				<Container>
-					<Stack
+				<div>
+					<div
 						direction="row"
 						justifyContent="center"
 						alignItems="center"
 						spacing={2}
 					>
-						<Typography>Copyright @imoodev 2021 All Right Reserved</Typography>
-					</Stack>
-				</Container>
+						<span>Copyright @imoodev 2021 All Right Reserved</span>
+					</div>
+				</div>
 			</Extra>
 		</>
 	);

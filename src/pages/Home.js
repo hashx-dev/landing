@@ -1,4 +1,4 @@
-import React ,{ lazy } from "react";
+import React ,{ lazy ,Suspense} from "react";
 
 import IntroContent1 from "../content/IntroContent1.json";
 import IntroContent2 from "../content/IntroContent2.json";
@@ -8,31 +8,37 @@ import IntroContent4 from "../content/IntroContent4.json";
 import MiddleBlockContent from "../content/MiddleBlockContent.json";
 import AboutContent from "../content/AboutContent.json";
 
-//import MissionContent from "../../content/MissionContent.json";
+
 import ProductContent1 from "../content/ProductContent1.json";
 import ProductContent2 from "../content/ProductContent2.json";
 import ProductContent3 from "../content/ProductContent3.json";
 import ProductContent4 from "../content/ProductContent4.json";
 import ContactContent from "../content/ContactContent.json";
+ 
 
+
+//  Not required ------------------------------------------------------
 // import { Card } from "@mui/material";
-import  Contact from  "../Components/ContactForm" 
-import  MiddleBlock from  "../Components/MiddleBlock"
+// import  Contact from  "../Components/ContactForm" 
+// import  MiddleBlock from  "../Components/MiddleBlock"
+//import MissionContent from "../../content/MissionContent.json";
+// import ScrollToTop from "../common/ScrollToTop"
+// import Container from "../common/Container"
+// import ContentBlock from "../Components/ContentBlock"
+// not Reaquired  ----------------------------------------------
 
 
-
-
-import Container from "../common/Container"
-import ScrollToTop from "../common/ScrollToTop"
-
-
-import ContentBlock from "../Components/ContentBlock"
+const Contact = lazy(() => import("../Components/ContactForm"));
+const MiddleBlock = lazy(() => import("../Components/MiddleBlock"));
+const Container = lazy(() => import("../common/Container"));
+const ScrollToTop = lazy(() => import("../common/ScrollToTop"));
+const ContentBlock = lazy(() => import("../Components/ContentBlock"));
 
 const Home = () => {
 	return (
+		<Suspense fallback= {<h1>loading ....</h1>}>
 		<Container>
-			<ScrollToTop />
-			{/* <Card sx={{ maxWidth: 1100 }}> */}
+			<ScrollToTop /> 
 				<video
 					width="100%"
 					autoPlay
@@ -45,8 +51,7 @@ const Home = () => {
 						type="video/mp4"
 					/>
 				</video>
-			{/* </Card> */}
-
+		
 			<MiddleBlock
 				title={AboutContent.title}
 				content={AboutContent.text}
@@ -134,6 +139,7 @@ const Home = () => {
 				id="contact"
 			/>
 		</Container>
+		</Suspense>
 	);
 };
 
