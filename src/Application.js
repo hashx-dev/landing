@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { config } from './config'
 import { client } from './Utils/apollo';
 import Router from './Router';
-import GithubCallback from './Containers/GithubCallback';
+import GithubCallback from './pages/GithubCallback';
 import Toggle from "./Components/Theme/Toggler";
 import { GlobalStyles } from "./Components/Theme/GlobalStyles";
 import { lightTheme, darkTheme } from "./Components/Theme/Theme";

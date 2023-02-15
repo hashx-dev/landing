@@ -13,7 +13,7 @@ import { getAuthenticatedUser } from '../Utils/auth'
 import { Loader } from "../Components/Common";
 import { PostContainer, PostTitle, PostDate, PostDateLink, PostReaction, BackButton } from "../Components/Post";
 import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Author";
-import { GithubLogin } from '../Components/Header'
+import { GithubLogin } from '../Components/Header/GithubLogin'
 import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
 import CommentsSection from "./CommentsSection";
 
