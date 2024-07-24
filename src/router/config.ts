@@ -14,5 +14,11 @@ const routes = [
     exact: true,
     component: "SingleBlog",
   },
+  {
+    path: "/verify",
+    exact: true,
+    component: "Verify",
+  },
 ];
+
 export default routes;
