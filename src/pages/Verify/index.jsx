@@ -18,18 +18,22 @@ const Verify = () => {
   const history = useHistory();
   const location = useLocation();
   const token = new URLSearchParams(location.search).get("token");
+  const  [userData , setUserData] = useState();
 
   useEffect(() => {
     const verifyToken = async () => {
       try {
         const { data, error } = await supabase
           .from('UserInfo')
-          .select("Id")
-          .eq("Id", token)
+          .select("Email , Id")
+          .eq("Email", token)
           .single();
 
           console.log(data);
           console.log(error);
+          if (data) {
+          setUserData(data);
+          }
         if (error ) {
           setTokenValid(false);
         }
@@ -47,7 +51,10 @@ const Verify = () => {
       setError("Passwords do not match");
       return;
     }
-
+    if(userData === undefined){
+      setError("Invalid email");
+      return;
+    }
     try {
 
       const { error } = await supabase
@@ -55,7 +62,7 @@ const Verify = () => {
         .update({
           SaltedHash:password,
         })
-        .eq("UserInfo", token);
+        .eq("UserInfo", userData.Id);
       if (error) {
         setError("Failed to update password. Please try again.");
         return;
